@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Bid-Venchure/static/css/main.db0761cb.css",
+    "main.js": "/Bid-Venchure/static/js/main.8a1f2974.js",
+    "static/media/target.png": "/Bid-Venchure/static/media/target.5d95abf1b3255ca8fa3e.png",
+    "static/media/fairplay.png": "/Bid-Venchure/static/media/fairplay.396dfad4a38d4b6e0166.png",
+    "static/media/man1.png": "/Bid-Venchure/static/media/man1.6070ab98efd0af125e6d.png",
+    "static/media/growth.png": "/Bid-Venchure/static/media/growth.b8a48c77e20e684a5b3e.png",
+    "static/media/logo.png": "/Bid-Venchure/static/media/logo.64687f3a6f60d96ea9f7.png",
+    "static/media/picaboutus.png": "/Bid-Venchure/static/media/picaboutus.f64665c81e1d8f640ead.png",
+    "static/media/roboto-serif-latin-400-normal.woff": "/Bid-Venchure/static/media/roboto-serif-latin-400-normal.95380722c46bd45072b0.woff",
+    "static/media/roboto-serif-latin-ext-400-normal.woff": "/Bid-Venchure/static/media/roboto-serif-latin-ext-400-normal.7a9487a52b35e9fc714b.woff",
+    "static/media/roboto-serif-latin-400-normal.woff2": "/Bid-Venchure/static/media/roboto-serif-latin-400-normal.6e77a537dad0dfaae962.woff2",
+    "static/media/roboto-serif-latin-ext-400-normal.woff2": "/Bid-Venchure/static/media/roboto-serif-latin-ext-400-normal.fd8482bbd95af396b0c6.woff2",
+    "static/media/roboto-serif-cyrillic-400-normal.woff": "/Bid-Venchure/static/media/roboto-serif-cyrillic-400-normal.f751bdc688e00151cda4.woff",
+    "static/media/roboto-serif-cyrillic-400-normal.woff2": "/Bid-Venchure/static/media/roboto-serif-cyrillic-400-normal.3d79f6b6fbc68e86ad90.woff2",
+    "static/media/roboto-serif-cyrillic-ext-400-normal.woff": "/Bid-Venchure/static/media/roboto-serif-cyrillic-ext-400-normal.750ee866d3f1815f7c45.woff",
+    "static/media/roboto-serif-vietnamese-400-normal.woff": "/Bid-Venchure/static/media/roboto-serif-vietnamese-400-normal.eebe223f32b755e64715.woff",
+    "static/media/roboto-serif-cyrillic-ext-400-normal.woff2": "/Bid-Venchure/static/media/roboto-serif-cyrillic-ext-400-normal.97a151b161c4128b2b49.woff2",
+    "static/media/roboto-serif-vietnamese-400-normal.woff2": "/Bid-Venchure/static/media/roboto-serif-vietnamese-400-normal.032940099a1b385ba705.woff2",
+    "static/media/slick.svg": "/Bid-Venchure/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Bid-Venchure/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Bid-Venchure/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Bid-Venchure/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Bid-Venchure/index.html",
+    "main.db0761cb.css.map": "/Bid-Venchure/static/css/main.db0761cb.css.map",
+    "main.8a1f2974.js.map": "/Bid-Venchure/static/js/main.8a1f2974.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db0761cb.css",
+    "static/js/main.8a1f2974.js"
+  ]
+}
