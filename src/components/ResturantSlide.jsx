@@ -70,7 +70,7 @@ const ResturantSlide = () => {
           </div>
         ))}
       </Slider>
-      {showForm && (
+      {/* {showForm && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-96">
             <h2 className="text-xl text-center text-orange-500 font-bold mb-2">
@@ -113,7 +113,7 @@ const ResturantSlide = () => {
             </button>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Banner.css";
+import image from "../images/image.jpg.jpg";
+import image2 from "../images/image2.jpg";
 
 const Banner = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -17,9 +19,9 @@ const Banner = () => {
     <div className="flex flex-col items-center justify-center mt-1 min-h-screen">
       <div className="flex flex-wrap mt-[-140px] w-full h-full gap-6 px-2 md:px-8">
         {/* Post Your Event Section */}
-        <div className="flex-1 p-4 bg-[#ecb07f] shadow-lg rounded-lg flex flex-col items-center justify-center border-r border-gray-200">
+        <div className="flex-1 p-4 bg-[#7e9eac] shadow-lg rounded-lg flex flex-col items-center justify-center border-r border-gray-200">
           <img
-            src="https://bidvenchure.com/static/media/postyourevent.cea00db952af44c42a66.png"
+            src={image}
             alt="Post Event"
             className="w-full h-64 mt-[-30px] md:w-5/6 md:h-80 rounded-lg object-cover mb-4"
           />
@@ -41,9 +43,9 @@ const Banner = () => {
         </div>
 
         {/* Join as Restaurant Section */}
-        <div className="flex-1 bg-[#ecb07f] p-4 shadow-lg rounded-lg flex flex-col items-center justify-center">
+        <div className="flex-1 bg-[#7e9eac] p-4 shadow-lg rounded-lg flex flex-col items-center justify-center">
           <img
-            src="https://bidvenchure.com/static/media/joinasrestaurent.1ad6b02f5da393755712.png"
+            src={image2}
             alt="Join as Restaurant"
             className="w-full h-64 md:w-5/6 md:h-80 rounded-lg object-cover mb-4"
           />

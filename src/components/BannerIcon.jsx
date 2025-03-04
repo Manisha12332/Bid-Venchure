@@ -67,7 +67,7 @@ const BannerIcon = () => {
           </div>
         ))}
       </Slider>
-      {showForm && (
+      {/* {showForm && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-96">
             <h2 className="text-xl font-bold mb-4">Book {selectedEvent}</h2>
@@ -95,7 +95,7 @@ const BannerIcon = () => {
             </button>
           </div>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
