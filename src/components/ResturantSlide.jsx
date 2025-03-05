@@ -36,7 +36,7 @@ const ResturantSlide = () => {
     dots: true,
     infinite: true,
     speed: 1200,
-    slidesToShow: 3,
+    slidesToShow: 7,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -50,30 +50,30 @@ const ResturantSlide = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
     ],
   };
 
   return (
-    <div className="sliderContainer mt-4 md:mt-[-40px] w-full px-4 md:px-6 lg:px-10">
+    <div className="sliderContainer mt-4  md:mt-[-40px] w-full px-4 md:px-6 lg:px-10">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-robotoSerif text-center font-bold mb-5">
         Our Associates
       </h1>
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index} className="text-center">
+          <div key={index} className="text-center  ">
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover border shadow-md mx-auto"
+              className="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] md:w-[150px] md:h-[150px] rounded-full object-cover bg-center border shadow-md mx-auto"
             />
             <p className="text-sm md:text-lg font-robotoSerif font-medium mt-2 text-black">
               {captions[index]}
