@@ -63,7 +63,7 @@ const ResturantSlide = () => {
   };
 
   return (
-    <div className="sliderContainer mt-4 w-full px-4 md:px-6 lg:px-10">
+    <div className="sliderContainer mt-4 md:mt-[-40px] w-full px-4 md:px-6 lg:px-10">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-robotoSerif text-center font-bold mb-5">
         Our Associates
       </h1>

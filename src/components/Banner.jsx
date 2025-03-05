@@ -16,7 +16,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center mt-[40px] min-h-screen">
+    <div className="flex flex-col md:mt-[-90px] items-center justify-center mt-[40px] min-h-screen">
       <div className="flex flex-col sm:flex-row w-full h-full gap-6 px-2 md:px-8">
         {/* Post Your Event Section */}
         <div className="flex-1 p-4 bg-[#7e9eac] shadow-lg rounded-lg flex flex-col items-center justify-center border-r border-gray-200">
