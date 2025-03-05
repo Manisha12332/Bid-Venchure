@@ -17,11 +17,6 @@ const Header = () => {
         />
       </div>
 
-      {/* Mobile Header Logo */}
-      <div className="fixed top-4 right-4 z-20 md:hidden">
-        <img src={bidVentureLogo} alt="Logo" className="w-24 sm:w-28" />
-      </div>
-
       {/* Sidebar */}
       <aside
         className={`fixed top-0 left-0 h-full bg-white shadow-lg transition-transform transform ${
@@ -40,7 +35,7 @@ const Header = () => {
             <Link
               key={to}
               to={to}
-              className="text-xl font-bold font-robotoSerif hover:text-indigo-600"
+              className="text-lg sm:text-xl font-bold font-robotoSerif hover:text-indigo-600"
               onClick={() => setIsSidebarOpen(false)}
             >
               {label}
@@ -56,12 +51,16 @@ const Header = () => {
       </aside>
 
       {/* Header for Desktop and Medium Screens */}
-      <header className="flex flex-wrap justify-between items-center px-4 py-4 fixed top-0 z-10 shadow-md w-full min-h-16 bg-white md:flex-row flex-col md:space-y-0 space-y-2">
+      <header className="flex flex-wrap justify-between items-center px-4 py-4 fixed top-0 z-10 shadow-md w-full min-h-16 bg-white md:flex-row flex-col space-y-2 md:space-y-0 lg:px-8 xl:px-16 2xl:px-20">
         {/* Logo */}
-        <img src={bidVentureLogo} alt="Logo" className="w-40 sm:w-52" />
+        <img
+          src={bidVentureLogo}
+          alt="Logo"
+          className="w-32 sm:w-40 md:w-48 lg:w-56"
+        />
 
-        {/* Navigation Links and Social Media for Medium and Large Screens */}
-        <nav className="hidden md:flex flex-wrap items-center space-x-4 sm:space-x-8">
+        {/* Navigation Links and Social Media for Larger Screens */}
+        <nav className="hidden md:flex flex-wrap items-center space-x-4 sm:space-x-6 lg:space-x-8 xl:space-x-6 2xl:space-x-16 text-lg md:ml-[56px] xl:ml-[80px] ">
           {[
             { to: "/", label: "Home" },
             { to: "/works", label: "How It Works" },
@@ -73,16 +72,16 @@ const Header = () => {
             <Link
               key={to}
               to={to}
-              className="text-xl font-bold font-robotoSerif hover:text-orange-500 relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-0.5 after:bg-orange-500 after:transition-all after:duration-300 hover:after:w-full"
+              className="text-lg lg:text-xl font-bold font-robotoSerif hover:text-orange-500 relative after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-0.5 after:bg-orange-500 after:transition-all after:duration-300 hover:after:w-full"
             >
               {label}
             </Link>
           ))}
-          {/* Social Media Links for Medium and Large Screens */}
-          <div className="hidden md:flex space-x-4">
-            <FaFacebook className="text-xl cursor-pointer hover:text-indigo-600" />
-            <FaInstagram className="text-xl cursor-pointer hover:text-indigo-600" />
-            <FaTwitter className="text-xl cursor-pointer hover:text-indigo-600" />
+          {/* Social Media Links for Larger Screens */}
+          <div className="hidden md:flex space-x-4 lg:space-x-6  lg:ml-[775px]">
+            <FaFacebook className="text-xl lg:text-2xl cursor-pointer hover:text-indigo-600" />
+            <FaInstagram className="text-xl lg:text-2xl cursor-pointer hover:text-indigo-600" />
+            <FaTwitter className="text-xl lg:text-2xl cursor-pointer hover:text-indigo-600" />
           </div>
         </nav>
       </header>

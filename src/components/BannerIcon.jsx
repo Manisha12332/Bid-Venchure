@@ -48,7 +48,7 @@ const BannerIcon = () => {
   };
 
   return (
-    <div className="sliderContainer mt-10 w-full lg:p-4 sm:pt-1 sm:pb-1 md:p-6 lg:pt-0 lg:pl-10 lg:pr-10 relative">
+    <div className="sliderContainer  mt-10 w-full lg:p-4 sm:pt-1 sm:pb-1 md:p-6 lg:pt-0 lg:pl-10 lg:pr-10 relative">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div
@@ -59,7 +59,7 @@ const BannerIcon = () => {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-[150px] h-[150px] rounded-full object-cover bg-center border shadow-md mx-auto"
+              className="w-[150px] h-[150px]  rounded-full object-cover bg-center border shadow-md mx-auto"
             />
             <p className="text-lg font-medium mt-2 font-robotoSerif text-black">
               {captions[index]}
