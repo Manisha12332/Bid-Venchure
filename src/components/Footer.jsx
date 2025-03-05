@@ -32,8 +32,8 @@ const Footer = () => {
         </div>
 
         {/* Middle Section - Pages Links */}
-        <div className="w-full md:w-1/6">
-          <h3 className="font-semibold ml-40 font-robotoSerif text-lg mb-4">
+        <div className="w-full md:w-1/6 ml-[-154px] mt-[24px]">
+          <h3 className="font-semibold ml-40 font-robotoSerif text-lg mb-4 ">
             Pages
           </h3>
           <ul className="space-y-2">
@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
 
         {/* Middle Section - More Pages Links */}
-        <div className="w-full md:w-1/6">
+        <div className="w-full md:w-1/6 md:mt-5  md:ml-[-30px] mt-[-133px] ml-[38px]">
           <h3 className="font-semibold font-robotoSerif  ml-[103px] text-lg mb-4">
             More Pages
           </h3>
@@ -98,16 +98,16 @@ const Footer = () => {
         </div>
 
         {/* Right Section - App Download */}
-        <div className="w-full md:w-1/3 text-right">
-          <h3 className="font-semibold font-robotoSerif text-lg mb-4">
+        <div className="w-full md:w-1/3 text-left">
+          <h3 className="font-semibold font-robotoSerif text-lg mb-4 mt-5 md:ml-32">
             Download the app
           </h3>
-          <div className="flex flex-col space-y-2 items-end">
-            <div className="flex font-robotoSerif items-center space-x-2">
+          <div className="flex flex-col space-y-2 items-start">
+            <div className="flex font-robotoSerif items-center space-x-2 md:ml-32">
               <FaGooglePlay className="w-6 h-6" />
               <span>Get it on Google Play</span>
             </div>
-            <div className="flex  font-robotoSerif items-center space-x-2">
+            <div className="flex  font-robotoSerif items-center space-x-2 md:ml-32">
               <FaApple className="w-6 h-6" />
               <span>Download on the App Store</span>
             </div>

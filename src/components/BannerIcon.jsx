@@ -36,10 +36,30 @@ const BannerIcon = () => {
     dots: true,
     infinite: true,
     speed: 1200,
-    slidesToShow: 8,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024, // Tablets and smaller
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 768, // Mobile screens
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480, // Smaller mobile screens
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
   };
 
   const handleClick = (event) => {
@@ -48,7 +68,7 @@ const BannerIcon = () => {
   };
 
   return (
-    <div className="sliderContainer  mt-10 w-full lg:p-4 sm:pt-1 sm:pb-1 md:p-6 lg:pt-0 lg:pl-10 lg:pr-10 relative">
+    <div className="sliderContainer z-[1] mt-10 w-full lg:p-4 sm:pt-1 sm:pb-1 md:p-6 lg:pt-0 lg:pl-10 lg:pr-10 relative ">
       <Slider {...settings}>
         {images.map((image, index) => (
           <div
@@ -59,43 +79,14 @@ const BannerIcon = () => {
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-[150px] h-[150px]  rounded-full object-cover bg-center border shadow-md mx-auto"
+              className="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] md:w-[150px] md:h-[150px] rounded-full object-cover bg-center border shadow-md mx-auto"
             />
-            <p className="text-lg font-medium mt-2 font-robotoSerif text-black">
+            <p className="text-xs sm:text-sm md:text-base font-medium mt-2 font-robotoSerif text-black">
               {captions[index]}
             </p>
           </div>
         ))}
       </Slider>
-      {/* {showForm && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-96">
-            <h2 className="text-xl font-bold mb-4">Book {selectedEvent}</h2>
-            <input
-              type="text"
-              placeholder="Enter your name"
-              className="w-full p-2 border rounded mb-2"
-            />
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full p-2 border rounded mb-2"
-            />
-            <button
-              className="bg-blue-500 text-white px-4 py-2 rounded"
-              onClick={() => setShowForm(false)}
-            >
-              Submit
-            </button>
-            <button
-              className="bg-gray-400 text-white px-4 py-2 rounded ml-2"
-              onClick={() => setShowForm(false)}
-            >
-              Cancel
-            </button>
-          </div>
-        </div>
-      )} */}
     </div>
   );
 };

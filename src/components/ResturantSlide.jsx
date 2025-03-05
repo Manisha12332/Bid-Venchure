@@ -36,84 +36,51 @@ const ResturantSlide = () => {
     dots: true,
     infinite: true,
     speed: 1200,
-    slidesToShow: 8,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-  };
-
-  const handleClick = (event) => {
-    setSelectedEvent(event);
-    setShowForm(true);
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <div className=" sliderContainer mt-1 w-full lg:p-4 sm:pt-1 sm:pb-1 md:p-6 lg:pt-0 lg:pl-10 lg:pr-10 relative">
-      <h1 className="text-5xl font-robotoSerif text-center font-bold mb-5 mt-[-30px]">
+    <div className="sliderContainer mt-4 w-full px-4 md:px-6 lg:px-10">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-robotoSerif text-center font-bold mb-5">
         Our Associates
       </h1>
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div
-            key={index}
-            className="text-center"
-            onClick={() => handleClick(captions[index])}
-          >
+          <div key={index} className="text-center">
             <img
               src={image}
               alt={`Slide ${index + 1}`}
-              className="w-[150px] h-[150px] rounded-full object-cover bg-center border shadow-md mx-auto"
+              className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover border shadow-md mx-auto"
             />
-            <p className="text-lg font-robotoSerif font-medium mt-2 text-black">
+            <p className="text-sm md:text-lg font-robotoSerif font-medium mt-2 text-black">
               {captions[index]}
             </p>
           </div>
         ))}
       </Slider>
-      {/* {showForm && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-96">
-            <h2 className="text-xl text-center text-orange-500 font-bold mb-2">
-              Book Restaurant
-            </h2>
-            <h2 className="text-lg font-semibold  mb-2">
-              Resturant: {selectedEvent}
-            </h2>
-            <input
-              type="text"
-              placeholder="Enter your name"
-              className="w-full p-2 border rounded mb-2"
-            />
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full p-2 border rounded mb-2"
-            />
-            <input
-              type="number"
-              placeholder="Enter your Mobile number"
-              className="w-full p-2 border rounded mb-2"
-            />
-            <input
-              type="text"
-              placeholder="Enter your Address"
-              className="w-full p-2 border rounded mb-2"
-            />
-            <button
-              className="bg-blue-500 text-white px-4 py-2 rounded"
-              onClick={() => setShowForm(false)}
-            >
-              Submit
-            </button>
-            <button
-              className="bg-gray-400 text-white px-4 py-2 rounded ml-2"
-              onClick={() => setShowForm(false)}
-            >
-              Cancel
-            </button>
-          </div>
-        </div>
-      )} */}
     </div>
   );
 };

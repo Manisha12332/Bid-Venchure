@@ -3,7 +3,7 @@ const WhyChoose = () => {
     <section className="container mt-[-230px] ml-[18px] mx-auto px-4 py-16">
       {/* Heading Section */}
       <div className="text-center md:text-left">
-        <h1 className="text-6xl font-robotoSerif font-bold text-black ">
+        <h1 className="text-6xl font-robotoSerif font-bold text-black mt-[174px]">
           Why Choose Us
         </h1>
         <h3 className="text-2xl font-robotoSerif font-bold text-orange-600 mt-2">
