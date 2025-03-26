@@ -15,7 +15,7 @@ const App = () => {
     // Only one <Router> for the entire app
 
     <Routes>
-      <Route path="/" index element={<Main />} />
+      <Route path="/Bid-Venchure" index element={<Main />} />
       <Route path="/works" element={<Works />} />
       <Route path="/services" element={<Services />} />
       <Route path="/event" element={<Events />} />
